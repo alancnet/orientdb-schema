@@ -17,6 +17,9 @@ const plan = schemaMaker(db, [
     "properties": [
       { "name": "name", "type": "String" },
       ...
+    ],
+    "indexes": [
+      { "name": "Player.name", "type": "unique", properties: ["name"] }
     ]
   },
   ...
